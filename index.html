@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Driven Classification of Images - Social or Non-Social</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <!--Pure-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <!--CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="page">
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h1>
+                    Event Driven Classification of Images <br>- Social or Non-Social
+                </h1>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h3>
+                    About this project
+                </h3>
+                <p>
+                    This project was my Final Year Project (FYP). It was a group work completed in October 2022.
+                </p>
+                <p>
+                    Different from the ordinary school assignments, this project was supervised by a lecturer from the School of 
+                    Information Technology at Monash University Malaysia, who acted as the project client or customer. 
+                </p>
+                <p>
+                    The objective of this project was to design and create a system that classifies the images based on the 
+                    depicted events into 2 broad categories: social and non-social. Examples of social events are graduation, 
+                    birthday, and wedding. 
+                </p>
+                <p>
+                    Based on the client's requirement, the system should comprise 3 key deliverables:
+                </p>
+                <ul>
+                    <li>
+                        An image database with at least 3000 images in each of the 2 categories
+                    </li>
+                    <li>
+                        An event driven image classifier (backend)
+                    </li>
+                    <li>
+                        A graphical user interface (frontend)
+                    </li>
+                </ul>
+                <p>
+                    The product acceptance criterion was that the event driven image classifier must achieve a prediction accuracy
+                    of at least 0.75 or 75%.
+                </p>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h3>
+                    Project outcomes
+                </h3>
+                <p>
+                    This project was executed in 4 major phases, which followed the waterfall project management methodology:
+                </p>
+                <ul>
+                    <li>
+                        Requirements phase, during which we collected and documented the client's requirement.
+                    </li>
+                    <li>
+                        System design phase, during which we carried out research on the project related topics and derived a 
+                        feasible solution.
+                    </li>
+                    <li>
+                        Implementation phase, during which we implemented the solution according to the planned schedule.
+                    </li>
+                    <li>
+                        Verification phase, during which we checked whether our product meets the client's requirement and 
+                        acceptance criterion stipulated at the beginning.
+                    </li>
+                </ul>
+                <p>
+                    Particularly, the implementation phase comprised 3 subphases:
+                </p>
+                <ul>
+                    <li>
+                        Construct an image database.
+                    </li>
+                    <li>
+                        Build an event driven image classifier.
+                    </li>
+                    <li>
+                        Create a graphical user interface.
+                    </li>
+                </ul>
+                <p>
+                    To construct an <b>image database</b>, my teammates and I tried to look for a suitable one on the internet. 
+                    Eventually, we selectively combined the images from the following 4 datasets:
+                </p>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://unaizahsan.com/?page_id=64">
+                            Social Event Image Dataset (SocEID)
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.kaggle.com/datasets/alessiocorrado99/animals10">
+                            Animals10 Dataset
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://web.mit.edu/torralba/www/indoor.html">
+                            Indoor Scene Recognition Dataset
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.kaggle.com/datasets/puneet6060/intel-image-classification">
+                            Intel Image Classification Dataset
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    As for the <b>event driven image classifier</b>, it is a Support Vector Machine (SVM) that classifies the 
+                    images using the Histogram of Oriented Gradients (HOG) feature, which represents the shapes of the objects 
+                    within an image. In this part, I was responsible for writing the code to train and test the model. Below is a 
+                    snippet of my codework, which was written using the Python programming language.
+                </p>
+                <div class="image">
+                    <img src="images/1.png" alt="Codework 1">
+                </div>
+                <p>
+                    According to the model testing results, our event driven image classifier achieves a prediction accuracy of 
+                    0.8983 or 89.83%.
+                </p>
+                <p>
+                    Apart from that, I was also responsible for writing the code to create a <b>graphical user interface</b>. 
+                    Specifically, I used the functions provided by Tkinter, which is a standard GUI library for Python. Below is a 
+                    snippet of my codework and a screenshot of the delivered graphical user interface.
+                </p>
+                <div class="image">
+                    <img src="images/2.png" alt="Codework 2">
+                </div>
+                <div><p></p></div>
+                <div class="image">
+                    <img src="images/3.png" alt="Graphical user interface">
+                </div>
+                <p>
+                    The diagram below shows how the 3 key deliverables work as a system.
+                </p>
+                <div class="image">
+                    <img src="images/4.png" alt="System">
+                </div>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h3>
+                    Summary
+                </h3>
+                <ul>
+                    <li>
+                        Programming language: Python
+                    </li>
+                    <li>
+                        Scope: Image Processing, Computer Vision, Support Vector Machine, Graphical User Interface
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
